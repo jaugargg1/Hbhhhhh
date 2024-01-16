@@ -8,10 +8,10 @@ from aiohttp import web
 from aiohttp_session import session_middleware
 from aiohttp_session.cookie_storage import EncryptedCookieStorage
 
-from .telegram import Client
-from .routes import setup_routes
-from .views import Views, middleware_factory
-from .config import (
+from telegram import Client
+from routes import setup_routes
+from views import Views, middleware_factory
+from config import (
     host,
     port,
     session_string,
